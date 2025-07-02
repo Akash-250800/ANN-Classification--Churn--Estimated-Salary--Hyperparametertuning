@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyd
+*.dll
+*.lib
+*.h5
+.DS_Store
