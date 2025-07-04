@@ -69,8 +69,8 @@ if st.button("Predict Churn"):
     raw_output = model.predict(input_scaled)[0][0]
     churn_probability = 1 / (1 + np.exp(-raw_output))  # sigmoid
 
-    st.write(f"🔍 Raw model output: {raw_output:.4f}")
-    st.write(f"🔢 **Churn Probability:** {churn_probability*100:.2f}%")
+    st.write(f" Raw model output: {raw_output:.4f}")
+    st.write(f" **Churn Probability:** {churn_probability*100:.2f}%")
 
     if churn_probability > 0.6:
         st.warning(" The customer is likely to churn.")
